@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Outside Broadcasting - Studio Crossover Request </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style.css"
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="http://127.0.0.1:5000/crossover", method='post'>
+        <div class="banner">
+          <h1>OB - Studio Crossover Request</h1>
+        </div>
+        
+        <div class="item">
+          <label for="venue">Venue<span>*</span></label>
+          <input id="venue" type="text" name="venue" required/>
+        </div>
+        
+        <div class="item">
+          <label for="time">Crossover Time<span>*</span></label>
+          <input id="time" type="time" name="time" required/>
+        </div>
+
+        <div class="item">
+          <label for="presenters">Select Presenter 1:</label>
+          <select name="presenters" id="presenters">
+            <option value="None">None</option>
+            <option value="Speedo">Speedo</option>
+            <option value="Kritic">Kritic</option>
+            <option value="Lamby">Lamby</option>
+            <option value="Chaya">Chaya</option>
+            <option value="BaTaps">BaTaps</option>
+            <option value="Sidhuna">Sidhuna</option>
+          </select>
+
+          <div></div>
+
+          <label for="presenters_2">Select Presenter 2:</label>
+          <select name="presenters_2" id="presenters_2">
+            <option value="None">None</option>
+            <option value="Speedo">Speedo</option>
+            <option value="Kritic">Kritic</option>
+            <option value="Lamby">Lamby</option>
+            <option value="Chaya">Chaya</option>
+            <option value="BaTaps">BaTaps</option>
+            <option value="Sidhuna">Sidhuna</option>
+          </select>
+        </div>
+
+        <div id="loading-screen">
+          <div id="loading-icon"></div>
+        </div>
+        
+        
+        <div class="btn-block">
+          <button id="request-button" type="submit" href="/">REQUEST</button>
+        </div>
+      </form>
+    </div>
+    <script src="../static/script/script.js"></script>
+  </body>
+</html>
